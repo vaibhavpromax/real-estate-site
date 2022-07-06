@@ -1,0 +1,62 @@
+.sell {
+  display: flex;
+  align-items: center;
+  //   justify-content: center;
+  background-color: antiquewhite;
+
+  img {
+    width: 700px;
+    height: 500px;
+  }
+
+  .sell-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
+    .form-wrapper {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      align-items: center;
+      label {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .icon {
+          cursor: pointer;
+        }
+      }
+      .input {
+        width: 300px;
+      }
+      .select {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        select {
+          border: none;
+          padding: 10px;
+          border: 1px solid rgba(138, 135, 135, 0.315);
+        }
+        option {
+          border: none;
+          padding: 10px;
+          // border: 1px solid rgba(138, 135, 135, 0.315);
+        }
+      }
+    }
+    .button {
+      cursor: pointer;
+      background-color: rgb(74, 74, 230);
+      color: white;
+      width: 80px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 9px;
+    }
+  }
+}

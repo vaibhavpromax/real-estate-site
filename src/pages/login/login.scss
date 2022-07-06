@@ -1,0 +1,30 @@
+.login-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  width: 600px;
+  // height: 100%;
+  gap: 20px;
+  -webkit-box-shadow: 10px 10px 5px -7px rgba(0, 0, 0, 0.54);
+  -moz-box-shadow: 10px 10px 5px -7px rgba(0, 0, 0, 0.54);
+  box-shadow: 10px 10px 5px -7px rgba(0, 0, 0, 0.54);
+  padding: 20px;
+  margin: auto;
+  .input {
+    width: 400px;
+  }
+
+  .button {
+    cursor: pointer;
+    background-color: rgb(99, 99, 228);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    width: 100px;
+    border-radius: 5px;
+  }
+}

@@ -1,0 +1,9 @@
+.rent {
+  .houseCards {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}

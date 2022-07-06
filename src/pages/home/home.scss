@@ -1,0 +1,19 @@
+.home {
+  height: 90vh;
+  img {
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+    z-index: 90;
+    filter: brightness(30%);
+  }
+  p {
+    z-index: 99;
+    position: absolute;
+    left: 20px;
+    bottom: 300px;
+    font-size: 60px;
+    color: white;
+    font-weight: 700;
+  }
+}

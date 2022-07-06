@@ -1,0 +1,45 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+  .left {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    .name {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      justify-content: center;
+      font-weight: bold;
+    }
+
+    .tabs {
+      font-weight: 500;
+      padding: 5px 10px;
+      color: purple;
+      &:hover {
+        border-radius: 5px;
+        background-color: rgba(128, 0, 128, 0.162);
+        border-bottom: 2px solid purple;
+      }
+    }
+  }
+  .right {
+    display: flex;
+    gap: 20px;
+    .login,
+    .signup {
+      border: 1px solid purple;
+      font-weight: bold;
+      padding: 5px 20px;
+      border-radius: 10px;
+    }
+    .signup {
+      background-color: purple;
+      color: white;
+    }
+  }
+}

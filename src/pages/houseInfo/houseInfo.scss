@@ -1,0 +1,106 @@
+.houseInfo {
+  display: flex;
+  justify-content: space-around;
+  .house-info-wrapper {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 5px;
+    background-color: rgb(246, 244, 239);
+    img {
+      height: 300px;
+    }
+    .name-price {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .name {
+        font-weight: bold;
+        font-size: 40px;
+      }
+      .price {
+        font-size: 30px;
+        font-weight: 600;
+        color: green;
+      }
+    }
+    h3 {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .location {
+      display: flex;
+      // justify-content: center;
+      gap: 10px;
+      align-items: center;
+    }
+    .features {
+      .amenities {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        .wrapper {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid rgba(128, 128, 128, 0.241);
+          padding: 10px 20px;
+          border-radius: 7px;
+          gap: 7px;
+        }
+      }
+    }
+    .icon {
+      color: purple;
+    }
+  }
+
+  .agent-contact {
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    .agent-info {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      justify-content: center;
+      img {
+        border-radius: 50%;
+        object-fit: cover;
+        width: 200px;
+        height: 200px;
+      }
+      .contact-info {
+        .name {
+          font-weight: 800;
+          font-size: 20px;
+        }
+        .phone {
+          font-weight: 600;
+        }
+      }
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      .button {
+        cursor: pointer;
+        background-color: rgb(74, 74, 230);
+        color: white;
+        width: 80px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 9px;
+      }
+    }
+  }
+}
