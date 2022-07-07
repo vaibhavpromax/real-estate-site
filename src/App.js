@@ -10,7 +10,7 @@ import HouseInfo from "./pages/houseInfo/HouseInfo";
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
+      {/* <Navbar /> */}
       <Routes>
         <Route index path="/" element={<Home />} />
         <Route path="/buy" element={<Rent />} />

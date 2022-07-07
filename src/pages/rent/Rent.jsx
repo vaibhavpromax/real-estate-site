@@ -5,6 +5,7 @@ import { HouseContext } from "../../HouseContext";
 import FmdBadIcon from "@mui/icons-material/FmdBad";
 
 import "./rent.scss";
+import Navbar from "../../components/navbar/Navbar";
 
 const Rent = () => {
   const { houses } = useContext(HouseContext);
@@ -24,6 +25,7 @@ const Rent = () => {
 
   return (
     <div className="rent">
+      <Navbar/>
       <Filter />
       <div className="houseCards">
         {houses.map((house) => (

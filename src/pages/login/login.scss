@@ -1,23 +1,28 @@
-.login-page {
+.login-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: whitesmoke;
-  width: 600px;
-  // height: 100%;
-  gap: 20px;
-  -webkit-box-shadow: 10px 10px 5px -7px rgba(0, 0, 0, 0.54);
-  -moz-box-shadow: 10px 10px 5px -7px rgba(0, 0, 0, 0.54);
-  box-shadow: 10px 10px 5px -7px rgba(0, 0, 0, 0.54);
-  padding: 20px;
-  margin: auto;
-  .input {
-    width: 400px;
-  }
 
-  .button {
-    background-color: var(--light-purple);
-    color: white;
+  gap: 50px;
+  .login-page {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    width: 600px;
+    gap: 20px;
+    -webkit-box-shadow: 10px 10px 5px -7px rgba(0, 0, 0, 0.54);
+    -moz-box-shadow: 10px 10px 5px -7px rgba(0, 0, 0, 0.54);
+    box-shadow: 10px 10px 5px -7px rgba(0, 0, 0, 0.54);
+    padding: 20px;
+    .input {
+      width: 400px;
+    }
+
+    .button {
+      background-color: var(--light-purple);
+      color: white;
+    }
   }
 }

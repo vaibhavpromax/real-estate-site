@@ -3,7 +3,7 @@
   justify-content: space-around;
   margin: 20px;
   .house-info-wrapper {
-    width: 600px;
+    width: 500px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -11,7 +11,7 @@
     border-radius: 10px;
     background-color: var(--light-gray);
     img {
-      height: 300px;
+      height: 250px;
       border-radius: 10px;
     }
     .name-price {
@@ -19,13 +19,14 @@
       justify-content: space-between;
       align-items: center;
       .name {
+        color: var(--primary-color);
         font-weight: bold;
-        font-size: 30px;
+        font-size: 25px;
       }
       .price {
-        font-size: 30px;
+        font-size: 25px;
         font-weight: 600;
-        color: green;
+        color: rgb(63, 169, 49);
       }
     }
     h3 {
