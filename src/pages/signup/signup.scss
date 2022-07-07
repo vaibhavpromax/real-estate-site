@@ -17,14 +17,7 @@
   }
 
   .button {
-    cursor: pointer;
-    background-color: rgb(99, 99, 228);
+    background-color: var(--light-purple);
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-    width: 100px;
-    border-radius: 5px;
   }
 }

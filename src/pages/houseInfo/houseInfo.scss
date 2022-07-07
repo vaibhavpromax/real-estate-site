@@ -1,15 +1,18 @@
 .houseInfo {
   display: flex;
   justify-content: space-around;
+  margin: 20px;
   .house-info-wrapper {
     width: 600px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 5px;
-    background-color: rgb(246, 244, 239);
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--light-gray);
     img {
       height: 300px;
+      border-radius: 10px;
     }
     .name-price {
       display: flex;
@@ -17,7 +20,7 @@
       align-items: center;
       .name {
         font-weight: bold;
-        font-size: 40px;
+        font-size: 30px;
       }
       .price {
         font-size: 30px;
@@ -26,15 +29,16 @@
       }
     }
     h3 {
-      font-size: 20px;
+      font-size: 18px;
       font-weight: bold;
+      margin: 2px 0px;
     }
 
     .location {
       display: flex;
-      // justify-content: center;
       gap: 10px;
       align-items: center;
+      font-weight: 600;
     }
     .features {
       .amenities {
@@ -53,14 +57,15 @@
       }
     }
     .icon {
-      color: purple;
+      color: var(--primary-color);
     }
   }
 
   .agent-contact {
-    background-color: beige;
+    background-color: rgba(239, 239, 208, 0.393);
     display: flex;
     flex-direction: column;
+    border-radius: 10px;
     gap: 20px;
     padding: 20px;
     .agent-info {
@@ -91,15 +96,7 @@
       gap: 15px;
 
       .button {
-        cursor: pointer;
-        background-color: rgb(74, 74, 230);
-        color: white;
-        width: 80px;
-        height: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 9px;
+        width: max-content;
       }
     }
   }

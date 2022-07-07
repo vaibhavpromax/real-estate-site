@@ -1,6 +1,6 @@
 import Input from "../../components/input/Input";
 import { Link } from "react-router-dom";
-
+import Button from "../../components/button/Button";
 import "./signup.scss";
 
 const Signup = () => {
@@ -30,7 +30,9 @@ const Signup = () => {
         placeholder="Confirm Password"
         label="Confirm Password"
       />
-      <div className="button">Sign Up</div>
+
+      <Button className="button">Sign Up</Button>
+      {/* <div className="button">Sign Up</div> */}
       <div>
         Already Signed In ? <Link to="/login"> Login Here</Link>
       </div>

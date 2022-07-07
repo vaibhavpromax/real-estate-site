@@ -3,6 +3,7 @@ import DriveFolderUploadOutlinedIcon from "@mui/icons-material/DriveFolderUpload
 
 import "./sell.scss";
 import { useState } from "react";
+import Button from "../../components/button/Button";
 const Sell = () => {
   const [houseImage, setHouseImage] = useState("");
 
@@ -19,8 +20,8 @@ const Sell = () => {
       />
 
       <div className="sell-form">
-        <label htmlFor="houseImage">
-          Insert Image
+        <label htmlFor="houseImage" className="file-upload">
+          Image
           <DriveFolderUploadOutlinedIcon className="icon" />
         </label>
         <input
@@ -60,7 +61,7 @@ const Sell = () => {
           <Input
             type="number"
             label="Enter Area in `Sq.ft`"
-            placeholder="xxxx"
+            placeholder="0000"
             className="input"
           />
           <Input
@@ -89,7 +90,7 @@ const Sell = () => {
           />
         </div>
 
-        <div className="button">Submit</div>
+        <Button className="button">Submit</Button>
       </div>
     </div>
   );

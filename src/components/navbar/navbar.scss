@@ -2,7 +2,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 20px;
+  padding: 10px 20px;
+  // margin-bottom: 20px;
+  background-color: rgba(198, 198, 198, 0.223);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid var(--light-gray);
   .left {
     display: flex;
     gap: 20px;
@@ -17,13 +21,14 @@
     }
 
     .tabs {
-      font-weight: 500;
+      font-weight: 600;
+      font-size: 18px;
       padding: 5px 10px;
-      color: purple;
+      color: var(--primary-color);
       &:hover {
         border-radius: 5px;
-        background-color: rgba(128, 0, 128, 0.162);
-        border-bottom: 2px solid purple;
+        background-color: var(--light-gray);
+        border-bottom: 2px solid var(--primary-color);
       }
     }
   }
@@ -32,14 +37,16 @@
     gap: 20px;
     .login,
     .signup {
-      border: 1px solid purple;
+      border: 1px solid var(--primary-color);
       font-weight: bold;
-      padding: 5px 20px;
-      border-radius: 10px;
     }
     .signup {
-      background-color: purple;
+      background-color: var(--primary-color);
       color: white;
+    }
+    .login {
+      background-color: white;
+      color: black;
     }
   }
 }

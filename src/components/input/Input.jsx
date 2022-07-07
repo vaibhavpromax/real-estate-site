@@ -1,10 +1,10 @@
 import "./input.scss";
 
-const Input = (props) => {
+const Input = ({ className = "", label, type, placeholder, ...rest }) => {
   return (
-    <div className={`input ${props.className}`}>
-      <label>{props.label}</label>
-      <input type={props.type} placeholder={props.placeholder} />
+    <div className={`input ${className}`}>
+      <label>{label}</label>
+      <input type={type} placeholder={placeholder} {...rest} />
     </div>
   );
 };

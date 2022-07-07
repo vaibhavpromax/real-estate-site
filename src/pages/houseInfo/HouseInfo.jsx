@@ -6,18 +6,22 @@ import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 
 import "./houseInfo.scss";
 import Input from "../../components/input/Input";
-
+import Button from "../../components/button/Button";
+import { useParams } from "react-router-dom";
+import { housesData } from "../../data";
 const HouseInfo = () => {
+  let { houseId } = useParams();
+  console.log(typeof houseId);
+
+  let house = housesData.find((house) => house.id.toString() === houseId);
+  console.log(house);
   return (
     <div className="houseInfo">
       <div className="house-info-wrapper">
-        <img
-          src="https://images.pexels.com/photos/53610/large-home-residential-house-architecture-53610.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt=""
-        />
+        <img src={house.imageLg} alt="" />
         <div className="name-price">
-          <div className="name">Ameero Wala Ghar</div>
-          <div className="price">₹40Lakh</div>
+          <div className="name">{house.name}</div>
+          <div className="price">₹ {house.price}</div>
         </div>
         <div className="about">
           <h3>Property Overview:</h3>
@@ -30,24 +34,27 @@ const HouseInfo = () => {
           </div>
         </div>
         <div className="location">
-          <LocationOnIcon className="icon" /> 9/9, Sector-9, Chandigarh, India"
+          <LocationOnIcon className="icon" />
+          {house.address} , {house.country}
         </div>
         <div className="features">
           <h3>Property Features:</h3>
           <div className="amenities">
             <div className="wrapper">
-              <HotelIcon className="icon" />4 rooms
+              <HotelIcon className="icon" />
+              {house.bedrooms} rooms
             </div>
             <div className="wrapper">
-              <BathtubIcon className="icon" />3 bath
+              <BathtubIcon className="icon" />
+              {house.bathrooms} bath
             </div>
             <div className="wrapper">
               <StraightenIcon className="icon" />
-              6969 sq ft
+              {house.surface} sq ft
             </div>
             <div className="wrapper">
               <CalendarMonthIcon className="icon" />
-              2010
+              {house.year}
             </div>
           </div>
         </div>
@@ -55,13 +62,10 @@ const HouseInfo = () => {
 
       <div className="agent-contact">
         <div className="agent-info">
-          <img
-            src="https://images.pexels.com/photos/819530/pexels-photo-819530.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt=""
-          />
+          <img src={house.agent.image} alt="" />
           <div className="contact-info">
-            <div className="name">Walter White</div>
-            <div className="phone">++696969969</div>{" "}
+            <div className="name">{house.agent.name}</div>
+            <div className="phone">+{house.agent.phone}</div>{" "}
           </div>
         </div>
         <div className="contact-form">
@@ -89,7 +93,7 @@ const HouseInfo = () => {
             placeholder="Enter here"
             label="Enter Your Query"
           />
-          <div className="button">Submit</div>
+          <Button className="button">Submit</Button>
         </div>
       </div>
     </div>

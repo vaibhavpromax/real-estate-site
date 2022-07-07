@@ -3,3 +3,10 @@
   padding: 0;
   font-family: 'Nunito', sans-serif;
 }
+
+:root {
+  --primary-color: rgb(161, 29, 161);
+  --secondary-color: rgba(50, 50, 240, 0.764);
+  --light-gray: rgba(128, 128, 128, 0.133);
+  --light-purple: purple;
+}

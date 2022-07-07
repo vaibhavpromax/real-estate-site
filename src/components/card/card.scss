@@ -2,12 +2,16 @@
   width: 400px;
   display: flex;
   flex-direction: column;
-  background-color: rgba(227, 219, 219, 0.823);
-  //   padding: 20px;
+  background-color: rgba(232, 232, 232, 0.538);
   border-radius: 10px;
   margin: 20px;
+  -webkit-box-shadow: 9px 10px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 9px 10px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 9px 10px 5px 0px rgba(0, 0, 0, 0.1);
+
+  cursor: pointer;
   .icon {
-    color: purple;
+    color: var(--primary-color);
   }
   .image {
     position: relative;
@@ -16,10 +20,11 @@
       width: 400px;
     }
     .price {
-      background-color: green;
+      background-color: var(--primary-color);
+      font-weight: 600;
       width: max-content;
       color: white;
-      padding: 5px 10px;
+      padding: 10px;
       border-radius: 0px 10px 10px 0px;
       position: absolute;
       bottom: 20px;
@@ -32,7 +37,7 @@
     gap: 10px;
     .name {
       font-weight: 800;
-      font-size: 25px;
+      font-size: 22px;
     }
     .about {
       font-size: 14px;
@@ -41,7 +46,7 @@
       display: flex;
       align-items: center;
       gap: 5px;
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 600;
     }
     .other-info {
@@ -51,7 +56,7 @@
       //   gap: 10px;
 
       .line {
-        border-left: 1px solid gray;
+        border-left: 1px solid var(--light-gray);
         height: 20px;
       }
 

@@ -1,5 +1,6 @@
 import HomeIcon from "@mui/icons-material/Home";
 import { Link } from "react-router-dom";
+import Button from "../button/Button";
 import "./navbar.scss";
 
 const Navbar = () => {
@@ -27,10 +28,12 @@ const Navbar = () => {
       </div>
       <div className="right">
         <Link to="/login" style={{ textDecoration: "none" }}>
-          <div className="login">Login</div>
+          <Button className="login">Login</Button>
+          {/* <div className="login">Login</div> */}
         </Link>
         <Link to="/signup" style={{ textDecoration: "none" }}>
-          <div className="signup">Sign Up</div>
+          <Button className="signup">Sign Up</Button>
+          {/* <div className="signup">Sign Up</div> */}
         </Link>
       </div>
     </div>

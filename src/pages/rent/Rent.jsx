@@ -1,24 +1,34 @@
+import { useContext } from "react";
 import Card from "../../components/card/Card";
 import Filter from "../../components/filter/Filter";
+import { HouseContext } from "../../HouseContext";
+import FmdBadIcon from "@mui/icons-material/FmdBad";
+
 import "./rent.scss";
 
 const Rent = () => {
+  const { houses } = useContext(HouseContext);
+  if (houses.length === 0) {
+    return (
+      <>
+        <div className="wrapper">
+          <Filter />
+          <div className="not-found">
+            <FmdBadIcon />
+            <h1>Sorry, not found</h1>
+          </div>
+        </div>
+      </>
+    );
+  }
+
   return (
     <div className="rent">
       <Filter />
       <div className="houseCards">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        {houses.map((house) => (
+          <Card key={house.id} house={house} />
+        ))}
       </div>
     </div>
   );
