@@ -12,6 +12,7 @@ const Rent = () => {
   if (houses.length === 0) {
     return (
       <>
+      <Navbar/>
         <div className="wrapper">
           <Filter />
           <div className="not-found">
